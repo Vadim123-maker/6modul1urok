@@ -1,0 +1,129 @@
+body {
+    background-color: #C4B5A5;
+}
+
+.header_img {
+    margin-left: 80px;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 80px;
+}
+
+.header_text {
+    display: flex;
+    align-items: center;
+}
+
+.header_button1 {
+    background-color: #FB982F;
+    color: black;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 130px;
+    height: 42px;
+}
+
+.header_button2 {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 130px;
+    height: 42px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.header_buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main_text {
+    margin-left: 80px;
+    font-size: 60px;
+    color: black;
+}
+
+main p {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.main_img {
+    margin-top: 80px;
+
+}
+
+main button {
+    background-color: #FB982F;
+    color: black;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 200px;
+    height: 70px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+body.light-mode {
+    background-color: #C4B5A5;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode .main_text,
+body.dark-mode header a {
+    color: #eee;
+}
+
+body.dark-mode .header_button1 {
+    background-color: #444;
+    color: #eee;
+}
+
+body.dark-mode .header_button2 {
+    background-color: #FB982F;
+    color: black;
+}
+
+body.dark-mode .header_img img {
+    filter: brightness(0) invert(1);
+}
+
+body,
+.header_button1,
+.header_button2,
+.main_text,
+header a,
+.header_img img {
+    transition: background-color 0.4s, color 0.4s, filter 0.4s;
+}
